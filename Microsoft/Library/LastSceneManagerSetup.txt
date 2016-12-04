@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Scenes/test_tuto_level_v.0.unity
+  isLoaded: 1
+  isActive: 1

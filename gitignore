@@ -1,0 +1,46 @@
+# ---------------[ Unity generated ]------------------ #
+**/[Ll]ibrary/*
+**/[Tt]emp/*
+**/[Oo]bj/*
+**/[Bb]uild/*
+**/[Bb]uilds/*
+**/UnityGenerated/*
+**/Assets/AssetStoreTools*
+*.stackdump
+
+# ============================================= #
+# Visual Studio / MonoDevelop / Rider generated #
+# ============================================= #
+[Ee]xported[Oo]bj/
+.vs/
+.consulo/
+/*.userprefs
+/*.csproj
+/*.pidb
+/*.suo
+/*.sln*
+/*.user
+/*.unityproj
+/*.booproj
+/.idea*/
+
+# Unity3D Crash Reports
+sysinfo.txt
+
+# -------------[ OS generated ]------------------------ #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+[Tt]humbs.db
+[Dd]esktop.ini
+
+# include meta files
+!*.*.meta
+
+# Builds
+*.apk
+*.unitypackage
