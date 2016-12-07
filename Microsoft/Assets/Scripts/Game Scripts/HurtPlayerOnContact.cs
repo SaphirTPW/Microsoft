@@ -10,14 +10,13 @@ public class HurtPlayerOnContact : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
-		healthmanager = FindObjectOfType<HealthManager> ();
+		healthmanager = GetComponent<HealthManager> ();
 	}
 	
 	void OnTriggerEnter2D (Collider2D other)
 	{
 		if(other.tag == "Player")
 		HealthManager.HurtPlayer (damageToGive);
-		
 		
 	}
 }

@@ -45,10 +45,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Character Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\Character Scripts\CameraSmooth.cs" />
      <Compile Include="Assets\Scripts\Character Scripts\CharacterControls.cs" />
      <Compile Include="Assets\Scripts\Character Scripts\EnemyAi.cs" />
      <Compile Include="Assets\Scripts\Character Scripts\EvilGuyPatrol.cs" />
+     <Compile Include="Assets\Scripts\Character Scripts\HeartUI.cs" />
+     <Compile Include="Assets\Scripts\Character Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Character Scripts\isGrounded.cs" />
      <Compile Include="Assets\Scripts\Game Scripts\Checkpoint.cs" />
      <Compile Include="Assets\Scripts\Game Scripts\EnemyMovement.cs" />

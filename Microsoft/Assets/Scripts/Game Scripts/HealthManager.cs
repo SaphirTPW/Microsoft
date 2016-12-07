@@ -8,7 +8,7 @@ public class HealthManager : MonoBehaviour {
 	public static int playerHealth;
 	public Slider healthBar;
 	private LevelManager levelmanager;
-	public bool isDead;
+	public bool isDead = false;
 
 	public Sprite[] heartcontainer;
 	public Image displayheart;
@@ -19,10 +19,11 @@ public class HealthManager : MonoBehaviour {
 	void Start () 
 	{
 		//healthBar = GetComponent<Slider> ();
-		levelmanager = FindObjectOfType<LevelManager> ();
+		levelmanager = GetComponent<LevelManager> ();
 		isDead = false;
 		FullHealth ();
 
+	
 	}
 	
 	// Update is called once per frame
@@ -38,9 +39,14 @@ public class HealthManager : MonoBehaviour {
 		if (playerHealth > maxPlayerHealth)
 			FullHealth();
 
-		currentplayerlife = playerHealth;
+		//currentplayerlife = playerHealth;
 
-		displayheart.sprite = heartcontainer [currentplayerlife];
+		if(currentplayerlife == heartcontainer.Length)
+		{
+			currentplayerlife = 0;
+		}
+
+
 	}
 
 	public static void HurtPlayer(int damageToGive)
