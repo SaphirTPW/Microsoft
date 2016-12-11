@@ -11,15 +11,15 @@ public class LevelManager : MonoBehaviour {
     private bool gravityStore;
     private GameObject cloneParticle;
     public float respawnEffect = 3;
-	public HealthManager healthManager;
+	public HealthManager2 healthManager;
 	private CameraSmooth cam;
 
 
     // Use this for initialization
     void Start ()
     {
-		player = FindObjectOfType<CharacterControls>();
-		healthManager = FindObjectOfType<HealthManager> ();
+		player = GetComponent<CharacterControls>();
+		healthManager = GetComponent<HealthManager2> ();
 		cam = FindObjectOfType<CameraSmooth> ();
 	}
 	

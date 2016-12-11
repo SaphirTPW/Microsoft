@@ -57,9 +57,11 @@
      <Compile Include="Assets\Scripts\Game Scripts\EnemyMovement.cs" />
      <Compile Include="Assets\Scripts\Game Scripts\EnemyOne.cs" />
      <Compile Include="Assets\Scripts\Game Scripts\HealthManager.cs" />
+     <Compile Include="Assets\Scripts\Game Scripts\HealthManager2.cs" />
      <Compile Include="Assets\Scripts\Game Scripts\HurtPlayerOnContact.cs" />
      <Compile Include="Assets\Scripts\Game Scripts\KillPlayer.cs" />
      <Compile Include="Assets\Scripts\Game Scripts\LevelManager.cs" />
+     <Compile Include="Assets\Scripts\Game Scripts\Parallax.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

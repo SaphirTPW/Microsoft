@@ -29,16 +29,17 @@ public class HealthManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
+
+		if (playerHealth > maxPlayerHealth)
+			FullHealth();
+
 		if (playerHealth <= 0 && !isDead) 
 		{
 			playerHealth = 0;
 			levelmanager.RespawnPlayer ();
 			isDead = true;
 		}
-
-		if (playerHealth > maxPlayerHealth)
-			FullHealth();
-
+			
 		//currentplayerlife = playerHealth;
 
 		if(currentplayerlife == heartcontainer.Length)
