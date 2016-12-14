@@ -36,7 +36,7 @@ public class HealthManager : MonoBehaviour {
 		if (playerHealth <= 0 && !isDead) 
 		{
 			playerHealth = 0;
-			levelmanager.RespawnPlayer ();
+			//levelmanager.RespawnPlayer ();
 			isDead = true;
 		}
 			

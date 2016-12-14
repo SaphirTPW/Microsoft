@@ -5,6 +5,7 @@ public class KillPlayer : MonoBehaviour {
 
 	public LevelManager levelManager;
 
+
 	// Use this for initialization
 	void Start () {
 		levelManager = FindObjectOfType<LevelManager> ();
@@ -21,7 +22,7 @@ public class KillPlayer : MonoBehaviour {
 		Debug.Log ("trigger " + other.name);
 		if (other.tag == "Player") 
 		{
-			levelManager.RespawnPlayerCo ();
+			//levelManager.RespawnPlayerCo ();
 		}
 
 	}

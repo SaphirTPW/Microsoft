@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class LevelManager : MonoBehaviour {
 
     public GameObject currentCheckpoint;
-	private CharacterControls player;
+	public CharacterControls player;
     public GameObject deathParticle;
     public GameObject respawnParticle;
     private float respawnDelay = 3f;
@@ -15,11 +16,12 @@ public class LevelManager : MonoBehaviour {
 	private CameraSmooth cam;
 
 
+
     // Use this for initialization
     void Start ()
     {
-		player = GetComponent<CharacterControls>();
-		healthManager = GetComponent<HealthManager2> ();
+		player = FindObjectOfType<CharacterControls>();
+		healthManager = FindObjectOfType<HealthManager2> ();
 		cam = FindObjectOfType<CameraSmooth> ();
 	}
 	
@@ -31,12 +33,13 @@ public class LevelManager : MonoBehaviour {
 
     public void RespawnPlayer()
     {
-        StartCoroutine("RespawnPlayerCo");
+		StartCoroutine(RespawnPlayerCo());
     }
 
-    public IEnumerator RespawnPlayerCo()
+     public IEnumerator RespawnPlayerCo()
     {
-        Instantiate(deathParticle, player.transform.position, player.transform.rotation);
+		
+		Instantiate(deathParticle, player.transform.position, player.transform.rotation);
         player.enabled = false;
         player.GetComponent<Renderer>().enabled = false;
 		cam.isFollowing = false;
@@ -55,6 +58,5 @@ public class LevelManager : MonoBehaviour {
 		cam.isFollowing = true;
         cloneParticle = Instantiate(respawnParticle, currentCheckpoint.transform.position, currentCheckpoint.transform.rotation) as GameObject;
         Destroy(cloneParticle, respawnEffect);
-
     }
 }

@@ -10,14 +10,13 @@ public class HealthManager2 : MonoBehaviour {
 	public Image HeartUi;
 	private LevelManager lM;
 	//bool damaged = false;
-	public bool isDead = false;
-	private GameObject player;
-
+	public bool isDead;
 
 	void Awake ()
 	{
 		currentLife = maxLife;
-		lM = GetComponent<LevelManager> ();
+
+		lM = FindObjectOfType<LevelManager> ();
 		isDead = false;
 		FullHealth ();
 
@@ -34,9 +33,11 @@ public class HealthManager2 : MonoBehaviour {
 		if (currentLife <= 0 && !isDead) 
 		{
 			currentLife = 0;
+			Debug.Break ();
+			lM.RespawnPlayer ();
 			isDead = true;
 			Debug.Log ("I'm dead man");
-			//lM.RespawnPlayer();
+			//Death();
 
 		}
 
@@ -56,4 +57,5 @@ public class HealthManager2 : MonoBehaviour {
 	{
 		currentLife = maxLife;
 	}
+		
 }

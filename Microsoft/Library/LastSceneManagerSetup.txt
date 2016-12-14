@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/test_tuto_level_v.0.unity
+- path: "C:/Users/Nathan/Desktop/Cours JV ann\xE9e 2/BAP/BAP - Microsoft/Microsoft/Assets/Scenes/test_tuto_level_v.0.unity"
   isLoaded: 1
   isActive: 1

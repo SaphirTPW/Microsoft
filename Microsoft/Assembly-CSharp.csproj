@@ -60,8 +60,12 @@
      <Compile Include="Assets\Scripts\Game Scripts\HealthManager2.cs" />
      <Compile Include="Assets\Scripts\Game Scripts\HurtPlayerOnContact.cs" />
      <Compile Include="Assets\Scripts\Game Scripts\KillPlayer.cs" />
+     <Compile Include="Assets\Scripts\Game Scripts\LeSanglierFonce.cs" />
+     <Compile Include="Assets\Scripts\Game Scripts\LeSanglierFonce1.cs" />
      <Compile Include="Assets\Scripts\Game Scripts\LevelManager.cs" />
      <Compile Include="Assets\Scripts\Game Scripts\Parallax.cs" />
+     <Compile Include="Assets\Scripts\Game Scripts\StartheChase.cs" />
+     <Compile Include="Assets\Scripts\Game Scripts\StopFollowCamera.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

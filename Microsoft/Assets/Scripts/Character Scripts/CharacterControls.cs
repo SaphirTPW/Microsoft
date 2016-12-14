@@ -5,7 +5,7 @@ public class CharacterControls : MonoBehaviour {
 
 	private float moveSpeed = 3.0f;
 	//private float moveVelocity = 1.0f;
-	private float jumpHeight = 6.0f;
+	private float jumpHeight = 10.0f;
 	private Rigidbody2D rb;
 	private isGrounded ground;
 	private BoxCollider2D collid;
